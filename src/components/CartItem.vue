@@ -4,20 +4,15 @@ defineProps({
   count: { type: Number, required: true },
 });
 
-defineEmits(["updateCount", "clear"]);
+defineEmits(["updateCount", "remove"]);
 </script>
 <template>
   <li>
     <span>{{ product.name }}</span>
     <span class="whitespace-nowrap">
-      <AppCountInput
-        :model-value="count"
-        @update:modelValue="$emit('updateCount', $event)"
-      />
-      <span class="inline-block w-12 text-right"
-        >${{ count * product.price }}</span
-      >
-      <span class="ml-4" @click="$emit('clear')">
+      <AppCountInput :model-value="count" @update:modelValue="$emit('updateCount', $event)" />
+      <span class="inline-block w-12 text-right">${{ count * product.price }}</span>
+      <span class="ml-4" @click="$emit('remove')">
         <fa icon="trash-alt" />
       </span>
     </span>
