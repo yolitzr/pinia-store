@@ -1,13 +1,13 @@
-# Pinia, The Enjoyable Vue Store 
-## Boilerplate Code
+# Pinia, The Enjoyable Vue Store
 
-![Course Feature Image](https://vueschool.io/media/bc6229f7525d1df7f87bd22604eaa468/Pinia_not-transparent.png)
+## Boilerplate Code
 
 ## How to Use
 
 ```
-npx degit  vueschool/pinia-course-boilerplate 
+npx degit  vueschool/pinia-course-boilerplate
 ```
+
 ```
 npm install
 npm run dev
